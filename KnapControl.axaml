@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GUIH2.KnapControl">
+	<StackPanel>
+		<Label>Fornavn</Label>
+		<TextBox Watermark="Fornavn" Name="Fornavn"></TextBox>
+		<Label>Efternavn</Label>
+		<TextBox  Watermark="Efternavn" Name="Efternavn"></TextBox>
+		<Label>Gender</Label>
+		<RadioButton Content="Male" Name="Gender1"></RadioButton>
+		<RadioButton Content="Female" Name="Gender2"></RadioButton>
+		<RadioButton Content="Other" Name="Gender3"></RadioButton>
+		<Label>Education</Label>
+		<CheckBox Name="Education1">Elementary</CheckBox>
+		<CheckBox Name="Education2">HighSchool</CheckBox>
+		<CheckBox Name="Education3">College</CheckBox>
+		<WrapPanel Margin="650,0,0,0">
+			<Button Click="ClearBTN" >Clear</Button>
+			<Button Click="SubmitBTN" Margin="0,0,0,0" Name="submit">Submit</Button>
+		</WrapPanel>
+		<Label Name="Nej" IsVisible="False"  Foreground="Red" FontSize="60">Submit Failed</Label>
+
+	</StackPanel>
+</UserControl>

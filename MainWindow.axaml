@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:uc="clr-namespace:GUIH2"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="GUIH2.MainWindow"
+        Title="GUIH2"
+		Name="Vindue">
+	<StackPanel>
+
+		<Label Name="Valuta">Vælg Valuta</Label>
+		<ComboBox SelectionChanged="SelectionChanged" Name="Tis">
+			<ComboBoxItem>DKK</ComboBoxItem>
+			<ComboBoxItem>USD</ComboBoxItem>
+			<ComboBoxItem>EUR</ComboBoxItem>
+
+		</ComboBox>
+		<TextBox Name="currency"></TextBox>
+		<Calendar Name="Jens" DisplayDateChanged="SkiftDato" SelectionMode="MultipleRange" SelectedDatesChanged="SkiftDato1" ></Calendar>
+		<TextBox Name="Stor" TextChanged="Mega"></TextBox>
+		<uc:MinHeltEgenKnap  Fancyevent="CustomEvent"></uc:MinHeltEgenKnap>
+	</StackPanel>
+	
+</Window>
