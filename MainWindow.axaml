@@ -9,16 +9,16 @@
 		Name="Vindue">
 	<StackPanel>
 
-		<Label Name="Valuta">Vælg Valuta</Label>
-		<ComboBox SelectionChanged="SelectionChanged" Name="Tis">
+		<Label Name="Valuta" IsVisible="False">Vælg Valuta</Label>
+		<ComboBox SelectionChanged="SelectionChanged" Name="Tis" IsVisible="False">
 			<ComboBoxItem>DKK</ComboBoxItem>
 			<ComboBoxItem>USD</ComboBoxItem>
 			<ComboBoxItem>EUR</ComboBoxItem>
 
 		</ComboBox>
-		<TextBox Name="currency"></TextBox>
-		<Calendar Name="Jens" DisplayDateChanged="SkiftDato" SelectionMode="MultipleRange" SelectedDatesChanged="SkiftDato1" ></Calendar>
-		<TextBox Name="Stor" TextChanged="Mega"></TextBox>
+		<TextBox Name="currency" IsVisible="False"></TextBox>
+		<Calendar Name="Jens" DisplayDateChanged="SkiftDato" IsVisible="False" SelectionMode="MultipleRange" SelectedDatesChanged="SkiftDato1" ></Calendar>
+		<TextBox Name="Stor" TextChanged="Mega" IsVisible="False"></TextBox>
 		<uc:MinHeltEgenKnap  Fancyevent="CustomEvent"></uc:MinHeltEgenKnap>
 	</StackPanel>
 	
