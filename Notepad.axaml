@@ -5,8 +5,39 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="GUIH2.Notepad">
 	<DockPanel>
-		
-		
+		<Border BorderBrush="Gray" BorderThickness="0,0,0,1" DockPanel.Dock="Top" >
+			<StackPanel Orientation="Horizontal">
+				<ComboBox  PlaceholderText="Filer">
+					<ComboBoxItem>Ny</ComboBoxItem>
+					<ComboBoxItem>Nyt Vindue</ComboBoxItem>
+					<ComboBoxItem>Åbn</ComboBoxItem>
+					<ComboBoxItem>Gem</ComboBoxItem>
+					<ComboBoxItem>Afslut</ComboBoxItem>
+				</ComboBox>
+				<ComboBox  PlaceholderText="Rediger">
+					<ComboBoxItem>Fortryd</ComboBoxItem>
+					<ComboBoxItem>Klip</ComboBoxItem>
+					<ComboBoxItem>Kopier</ComboBoxItem>
+					<ComboBoxItem>Sæt ind</ComboBoxItem>
+					<ComboBoxItem>Slet</ComboBoxItem>
+				</ComboBox>
+				<ComboBox  PlaceholderText="Formater">
+					<ComboBoxItem>Tekstombrydning</ComboBoxItem>
+					<ComboBoxItem>SkriftType</ComboBoxItem>
+				</ComboBox>
+				<ComboBox PlaceholderText="Vis">
+					<ComboBoxItem>Zoom</ComboBoxItem>
+					<ComboBoxItem>StatusLinje</ComboBoxItem>
+
+				</ComboBox>
+				<ComboBox PlaceholderText="Hjælp">
+					<ComboBoxItem>Vis hjælp</ComboBoxItem>
+					<ComboBoxItem>Send Feedback</ComboBoxItem>
+					<ComboBoxItem>Om Notesblok</ComboBoxItem>
+				</ComboBox>
+			</StackPanel>
+		</Border>		
+		<TextBox AcceptsReturn="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ></TextBox>
 	</DockPanel>
-  
+
 </UserControl>
